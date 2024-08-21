@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Application part 2</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts Roboto  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- for Icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-card">
+        <div class="top-container">
+          <i class="fas fa-location-dot location-icon"></i>
+          <input type="text" class="search-bar" />
+          <div class="search-icon-bg">
+            <i class="fas fa-search search-icon" placeholder="Search..."></i>
+          </div>
+        </div>
+        <div class="mid-container">
+          <div class="weather-img-container">
+            <img
+              src="sunny-cloudy.png"
+              alt="waether-image"
+              class="weather-img"
+            />
+          </div>
+          <p class="degrees">28</p>
+          <p class="weather-description">Overcast Clouds</p>
+        </div>
+
+        <div class="bottom-container">
+          <div class="stats">
+            <i class="fas fa-water stats-icon"></i>
+            <div>
+              <p class="stats-value">91%</p>
+              <p class="stats-text">Humidity</p>
+            </div>
+          </div>
+
+          <div class="stats">
+            <i class="fas fa-wind stats-icon"></i>
+            <div>
+              <p class="stats-value">1 Km/h</p>
+              <p class="stats-text">Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

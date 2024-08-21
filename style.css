@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: rgb(13, 13, 83);
+}
+
+.container {
+  background-color: rgb(6, 49, 59);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-card {
+  height: 700px;
+  width: 500px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  gap: 20px;
+}
+
+.top-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.search-bar {
+  font-size: 32px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  box-shadow: 0px 4px 8px rgba(177, 174, 174, 0.2);
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.location-icon {
+  font-size: 32px;
+}
+
+.search-icon-bg {
+  background-color: rgb(92, 176, 197);
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.search-icon:hover {
+  background-color: rgb(40, 103, 119);
+}
+
+.mid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-img-container {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.weather-img {
+  max-width: 100%;
+  /* object-fit: cover; / */
+}
+
+.degrees {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 82px;
+  font-weight: 600;
+  position: relative;
+}
+
+.degrees::after {
+  content: "\00B0 C";
+  font-size: 32px;
+  position: absolute;
+  top: 0;
+}
+
+.weather-description {
+  margin: 0;
+  font-size: 32px;
+}
+
+.bottom-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stats {
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.stats-icon {
+  font-size: 32px;
+}
+
+.stats-value {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.stats-text {
+  margin: 0;
+  font-size: 18px;
+}
