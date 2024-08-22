@@ -40,7 +40,7 @@ body {
   text-transform: uppercase;
   border: none;
   outline: none;
-  box-shadow: 0px 4px 8px rgba(177, 174, 174, 0.2);
+  box-shadow: 0px 4px 8px rgba(218, 215, 215, 0.2);
   border-radius: 20px;
   padding: 5px;
 }
@@ -51,9 +51,10 @@ body {
 
 .search-icon-bg {
   background-color: rgb(92, 176, 197);
+  border: none;
   font-size: 20px;
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   display: flex;
   align-items: center;
