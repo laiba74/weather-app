@@ -3,6 +3,7 @@ const search = document.querySelector(".search-box button");
 const weatherBox = document.querySelector(".weather-box");
 const weatherDetails = document.querySelector(".weather-details");
 const error404 = document.querySelector(".not-found");
+const errorImg = document.querySelector(".not-found img");
 
 search.addEventListener("click", () => {
   const APIKey = "83d41bd515b88f196c3064d19861f867";
@@ -16,6 +17,7 @@ search.addEventListener("click", () => {
     .then((response) => response.json())
     .then((json) => {
       if (json.cod === "404") {
+        errorImg.src = "images/not-found.png";
         container.style.height = "400px";
         weatherBox.style.display = "none";
         weatherDetails.style.display = "none";

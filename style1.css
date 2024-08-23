@@ -151,7 +151,9 @@ body {
   width: 100%;
   text-align: center;
   margin-top: 50px;
+  /* Making it invisible  */
   scale: 0;
+  /* Makes the element fully transparent.  */
   opacity: 0;
   display: none;
 }
@@ -174,7 +176,9 @@ body {
 }
 
 .fadeIn {
+  /* Animates the element using the fadeIn keyframes over 0.5 seconds.  */
   animation: 0.5s fadeIn forwards;
+  /* Delays the start of the animation by 0.5 seconds.  */
   animation-delay: 0.5s;
 }
 
